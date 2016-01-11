@@ -1,4 +1,5 @@
-# Charles
+
+Steps to test app
 
 1.Create database customer_db.
 
@@ -10,10 +11,10 @@
 
 5.Create Customer -- > Run CreateCustomerTest.java
 
-6.List Customer -- > http://localhost:8080/mySpringWeb/accounts
+6.Get list of customers -- > http://localhost:8080/mySpringWeb/user
+
+the below 2 steps for only Junit tests calling the dataaccess. I will integrate these 2 with the UI after the initial review of the view page in the step 6
 
 7.Update Customer --> Run UpdateCustomerTest.java
 
 8.Delete Customer -- >Run DeleteCustomerTest.java
-
-9.Get a particular Customer -- > http://localhost:8080/mySpringWeb/accounts/7
