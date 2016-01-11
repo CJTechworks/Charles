@@ -18,7 +18,7 @@ public class CreateCustomerTest {
 	public void createCustomer() {
 		// use a unique number to avoid conflicts
 		String url = BASE_URL ;
-		Customer customer = new Customer(7,"Advik","abc","abc","abc","abc","abc");
+		Customer customer = new Customer(1,"John","olive avenue","lacewood drive","peoria","US","61075");
 		
 		
 		URI newAccountLocation = restTemplate.postForLocation(url, customer);
@@ -28,7 +28,7 @@ public class CreateCustomerTest {
 		//	Run this test.  Whether it passes or not, proceed with the next step.
 		System.out.println(newAccountLocation);
 		Customer customerNew = restTemplate.getForObject(newAccountLocation,Customer.class);
-		Assert.assertEquals("Advik", customerNew.getName());
+		Assert.assertEquals("Advik1", customerNew.getName());
 	}
 	
 }
